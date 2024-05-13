@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Chatbot</title>
+</head>
+<body>
+    <h1>Financial Chatbot</h1>
+    <form action="/" method="post">
+        <label for="user_query">Enter your query:</label><br>
+        <input type="text" id="user_query" name="user_query"><br>
+        <input type="submit" value="Submit">
+    </form>
+    {% if user_input %}
+    <p>You asked: {{ user_input }}</p>
+    <p>Response: {{ response }}</p>
+    {% endif %}
+</body>
+</html>
